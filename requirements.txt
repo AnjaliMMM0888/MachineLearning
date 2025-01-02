@@ -92,7 +92,8 @@ wheel==0.43.0
 wrapt==1.16.0
 yarl==1.17.1
 zeep==4.3.1
-numpy
-pytest
-scikit-learn
-matplotlib
+numpy>=1.24.0
+pandas==2.2.3
+requests==2.32.3
+scikit-learn==1.5.2
+scipy==1.14.1
