@@ -94,5 +94,5 @@ yarl==1.17.1
 zeep==4.3.1
 numpy
 pytest
-sklearn
+scikit-learn
 matplotlib
