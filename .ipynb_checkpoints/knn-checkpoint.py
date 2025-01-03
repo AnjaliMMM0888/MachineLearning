@@ -2,36 +2,15 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 3,
+   "execution_count": 1,
    "metadata": {},
    "outputs": [
     {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "(120, 4)\n",
-      "[5.1 2.5 3.  1.1]\n",
-      "(120,)\n",
-      "[1 2 0 2 1 0 0 0 0 1 0 1 0 2 2 0 2 2 2 2 0 2 2 1 1 1 1 1 1 0 0 2 2 2 0 0 0\n",
-      " 2 1 2 2 1 0 2 0 2 0 1 1 0 1 0 2 2 2 1 0 0 2 1 1 0 1 2 1 1 1 0 0 0 1 1 0 2\n",
-      " 1 2 2 1 0 1 2 0 0 2 2 1 1 2 0 1 2 2 2 1 0 0 0 0 2 1 2 0 0 1 1 2 1 1 2 2 2\n",
-      " 0 2 0 0 2 2 1 0 0]\n"
-     ]
-    },
-    {
-     "data": {
-      "text/plain": [
-       "<Figure size 640x480 with 1 Axes>"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "KNN classification accuracy 1.0\n"
+     "ename": "IndentationError",
+     "evalue": "unexpected indent (<ipython-input-1-4f7021350367>, line 77)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  File \u001b[1;32m\"<ipython-input-1-4f7021350367>\"\u001b[1;36m, line \u001b[1;32m77\u001b[0m\n\u001b[1;33m    try:\u001b[0m\n\u001b[1;37m    ^\u001b[0m\n\u001b[1;31mIndentationError\u001b[0m\u001b[1;31m:\u001b[0m unexpected indent\n"
      ]
     }
    ],
@@ -109,8 +88,21 @@
     "    clf = KNN(k=k)\n",
     "    clf.fit(X_train, y_train)\n",
     "    predictions = clf.predict(X_test)\n",
-    "    print(\"KNN classification accuracy\", accuracy(y_test, predictions))"
+    "    print(\"KNN classification accuracy\", accuracy(y_test, predictions))\n",
+    "    \n",
+    "import inspect\n",
+    "try:\n",
+    "    inspect.getsource(<object>)\n",
+    "except OSError as e:\n",
+    "    print(f\"Failed to get source for {<object>}: {e}\")\n"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
   },
   {
    "cell_type": "code",
